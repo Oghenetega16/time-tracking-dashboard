@@ -1,4 +1,4 @@
-export default function MainCard() {
+export default function MainCard({ handleClick, frame }) {
     return (
         <div className="main-card">
             <div className="top-card">
@@ -12,9 +12,15 @@ export default function MainCard() {
             </div>
             <div className="bottom-card">
                 <ul>
-                    <li>Daily</li>
-                    <li>Weekly</li>
-                    <li>Monthly</li>
+                    <li 
+                    className={frame === 'daily' && 'active'}
+                    onClick={() => handleClick('daily')}>Daily</li>
+                    <li 
+                    className={frame === 'weekly' && 'active'}
+                    onClick={() => handleClick('weekly')}>Weekly</li>
+                    <li 
+                    className={frame === 'monthly' && 'active'}
+                    onClick={() => handleClick('monthly')}>Monthly</li>
                 </ul>
             </div>
         </div>
