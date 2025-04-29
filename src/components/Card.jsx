@@ -1,4 +1,4 @@
-import data from "/public/data.json"
+import data from "../data.json"
 export default function Card({ frame }) {
 
     const colors = {
@@ -11,12 +11,12 @@ export default function Card({ frame }) {
     }
 
     const images = {
-        work: './src/assets/images/icon-work.svg',
-        play: './src/assets/images/icon-play.svg',
-        study: './src/assets/images/icon-study.svg',
-        exercise: './src/assets/images/icon-exercise.svg',
-        social: './src/assets/images/icon-social.svg',
-        selfcare: './src/assets/images/icon-self-care.svg'
+        work: './images/icon-work.svg',
+        play: './images/icon-play.svg',
+        study: './images/icon-study.svg',
+        exercise: './images/icon-exercise.svg',
+        social: './images/icon-social.svg',
+        selfcare: './images/icon-self-care.svg'
     }
 
     const previousTitle = {
@@ -47,7 +47,7 @@ export default function Card({ frame }) {
                         <div className="card-details">
                             <div className="activity">
                                 <p>{item.title}</p>
-                                <img src="./src/assets/images/icon-ellipsis.svg" alt="ellipsis" />
+                                <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
                             </div>
                             <div className="duration">
                                 <h1>{current}{current < 2 ? 'hr' : 'hrs'}</h1>

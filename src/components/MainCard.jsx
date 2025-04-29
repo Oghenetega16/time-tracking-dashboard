@@ -3,7 +3,7 @@ export default function MainCard({ handleClick, frame }) {
         <div className="main-card">
             <div className="top-card">
                 <div className="card-image">
-                    <img src="./src/assets/images/image-jeremy.png" alt="jeremy photo" />
+                    <img src="./images/image-jeremy.png" alt="jeremy photo" />
                 </div>
                 <div className="card-report">
                     <span>Report for</span>
